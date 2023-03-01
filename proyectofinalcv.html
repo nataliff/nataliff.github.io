@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>CV</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo del encabezado */
+header {
+  background-color: pink;
+  padding: 15px;
+  text-align: left;
+  font-size: 25px;
+  color: white;
+}
+
+/* Contenedor de flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Estilo del menú de navegación */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Estilo de la lista dentro del menú */
+nav ul {
+  list-style-type: none;
+  padding: 1;
+}
+
+/* Estilo del contenido */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Estilo del pie de página */
+footer {
+  background-color: #777;
+  padding: 20px;
+  text-align: start;
+  color: white;
+}
+
+/* Responsive layout - Diseño responsivo hace que el menú y el contenido dentro de la sección se coloquen uno encima del otro en lugar de uno al lado del otro */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <img src="https://randomuser.me/api/portraits/women/12.jpg" ; style="float:right; border-radius: 100% ; alt= "Error en la carga de foto de perfil">
+  <h2>Isabella Boyd</h2>
+  <h4> Diseñadora web </h4>
+  
+  
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <h1>Datos de contacto</h1>
+      <li><a href="#">Teléfono</a></li>
+      <li><a href="#">Dirección</a></li>
+      <li><a href="#">E-mail</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Experiencias laborales</h1>
+    <p>Puesto: Diseñadora Sr.</p>
+    <p>Empresa:Revista Lala. Febrero 2018 - Marzo 2020</p>
+    <p>Puesto: Diseñadora de catálogo web</p>
+    <p>Empresa:Estonia Inc. Junio 2017 - Febrero 2018</p>
+    <p>Puesto: Ilustración digital en 2D para redes sociales</p>
+    <p>Empresa:Ventas R.D.  Enero 2015 - Junio 2017</p>
+  </article>
+</section>
+
+<footer>  
+    <form method="get">
+        <label>Déjeme su e-mail y me contactaré con usted : </label>
+        <input type="text" placeholder="ejemplo@email.com"/>
+        <input type="submit" value="Enviar">
+    </form>
+   
+</footer>
+
+</body>
+</html>
